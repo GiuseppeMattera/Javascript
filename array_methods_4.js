@@ -12,24 +12,9 @@ const persons = [
 ];
 
 function nicknameMap (arg) {
-    const namesModified = arg.map(function(element) {
-        let name = element.name;
-        let age = element.age;
-        if (element.age > 0 && element.age < 18) {
-            name = "Little boy!";
-        }
-        else if (element.age >= 18 && element.age <= 24) {
-            name = "Young man!";
-        }
-        else {
-            name = "Adult"
-        }
-        return {
-            name, age
-        }
-    })
-    return namesModified;
-};
+    let nicknamesArray = arg.map(element => element = element.name + "-" + element.age);
+    return nicknamesArray;
+}
 
 const nicknames = nicknameMap(persons);
 console.log(persons);
