@@ -3,8 +3,6 @@ const person = {
     age: 30
 }
 
-const skanflain = [1, 2, 3];
-
 function fetchDataFromAPI(callback) {
     setTimeout( () => {
         callback(person);
