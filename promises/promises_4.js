@@ -1,4 +1,4 @@
-let randomNumber = (Math.random()*1);
+let randomNumber = (Math.random() *1);
 
 function fetchDataFromAPI(arg) {
     return new Promise((resolve, reject) => {
