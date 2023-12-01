@@ -62,22 +62,10 @@ function fetchJobById(id){
 
 // ESEMPIO CON LA NUOVA SINTASSI ASYNC AWAIT
 
-// FACCIO DUE FUNZIONI AINCRONE DIVERSE PERCHE' PROVANDO A FARNE UNA SOLA CON ALL'INTERNO ENTRAMBE 
-// LE FUNZIONI CHE RESTITUISCONO LE PROMISE NON RIESCO A GESTIRE GLI ERRORI DI ENTRAMBE CONTEMPORANEAMENTE
-
 async function exampleTryCatch() {
     try {
-        const person = await fetchPersonById(3);
+        const person = await fetchPersonById(2);
         console.log(person);
-    } catch (error) {
-        console.log(error.message);
-    }
-}
-
-exampleTryCatch();
-
-async function exampleTryCatch2() {
-    try {
         const job = await fetchJobById(3);
         console.log(job);
     } catch (error) {
@@ -85,7 +73,7 @@ async function exampleTryCatch2() {
     }
 }
 
-exampleTryCatch2();
+exampleTryCatch();
 
 
 // ESEMPIO CON LA VECCHIA SINTASSI THEN E CATCH
