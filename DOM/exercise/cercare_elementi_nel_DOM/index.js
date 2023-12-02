@@ -8,4 +8,4 @@ const person = {
 }
 
 const jsonObj = JSON.stringify(person);
-$form.setAttribute("data.person", jsonObj);
+$form.setAttribute("data-person", jsonObj);
