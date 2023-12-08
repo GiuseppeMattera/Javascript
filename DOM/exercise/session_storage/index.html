@@ -51,11 +51,11 @@
             state.lastname = $lastname.value;
             state.email = $email.value;
 
-            localStorage.setItem('data', JSON.stringify(state));
+            sessionStorage.setItem('data', JSON.stringify(state));
         }
 
         const renderData = () => {
-            $name.innerText = JSON.parse(localStorage.getItem('data')).firstname;
+            $name.innerText = JSON.parse(sessionStorage.getItem('data')).firstname;
         }
 
         $btn.addEventListener("click", () => {
@@ -66,7 +66,7 @@
         if ($name.innerText !== null) {
             renderData();
         }
-        
+
     </script>
 </body>
 
